@@ -42,6 +42,11 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <!-- The plugin's auto-detection only finds a public main(), and
+                         PaymentApplication uses the Java 25 package-private form -->
+                    <mainClass>com.example.payments.PaymentApplication</mainClass>
+                </configuration>
             </plugin>
         </plugins>
     </build>
