@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: payment-api
+
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        # Expose only the health endpoint, nothing else
+        include: health
+  endpoint:
+    health:
+      probes:
+        # Enables /actuator/health/liveness and /actuator/health/readiness
+        # even outside Kubernetes/OpenShift
+        enabled: true
