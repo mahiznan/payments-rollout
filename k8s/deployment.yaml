@@ -1,0 +1,45 @@
+# PHASE 4: the NAIVE deployment, on purpose.
+# No probes, no graceful shutdown, no preStop, default rolling-update settings.
+# Later phases harden it one step at a time.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: payment-api
+  labels:
+    app: payment-api
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: payment-api
+  # Set explicitly because the Kubernetes default (25%/25%) rounds to
+  # maxUnavailable 0 / maxSurge 1 with 3 replicas, which is already the SAFE
+  # setting. The naive version allows one pod to be down during a rollout.
+  # Phase 6 changes this to maxUnavailable 0.
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
+  template:
+    metadata:
+      labels:
+        app: payment-api
+    spec:
+      containers:
+        - name: payment-api
+          image: image-registry.openshift-image-registry.svc:5000/my-project/payment-api:latest
+          ports:
+            - name: http
+              containerPort: 8080
+          env:
+            - name: APP_VERSION
+              value: v1
+          resources:
+            # CRC has very little schedulable memory left (requests are ~92% allocated),
+            # so the REQUEST is small. The LIMIT is what protects the node.
+            requests:
+              cpu: 50m
+              memory: 96Mi
+            limits:
+              memory: 512Mi

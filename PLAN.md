@@ -15,7 +15,7 @@ Why it suits a rollout test:
 
 ## 2. Goal
 
-Deploy the service with **5 replicas** to CRC, roll out a new version while **k6** sends steady payment traffic, and show **zero failed requests and zero duplicate or lost authorizations**.
+Deploy the service with **3 replicas** to CRC (reduced from 5 because the CRC VM has little free memory), roll out a new version while **k6** sends steady payment traffic, and show **zero failed requests and zero duplicate or lost authorizations**.
 
 | Concept | Where it shows up |
 |---|---|
@@ -42,7 +42,7 @@ Deploy the service with **5 replicas** to CRC, roll out a new version while **k6
 2. **In-cluster binary build** with a multi-stage Dockerfile (Maven build, then slim JRE). Needs the build pod to reach Maven Central.
 3. **Spring Boot 4.x, Java 25**, configured with **YAML** (`application.yaml`). **Only two dependencies:** `spring-boot-starter-webmvc` (REST) and `spring-boot-starter-actuator` (health probes). No validation starter (inputs are checked by hand), no Lombok, no database, no test or devtools extras. Authorizations are tracked in a per-pod in-memory map for idempotency (see caveat in section 5). Exact starter names and the Maven/JRE base images (`25`) are confirmed at build time, since Boot 4 renamed some starters.
 4. **Plain HTTP route.** k6 runs on this Mac.
-5. **Sizing:** request 256Mi / 100m CPU, limit 512Mi per pod. 5 replicas plus 1 surge is about 1.5 GiB requested. Capacity checked before deploy.
+5. **Sizing:** request **96Mi / 50m CPU**, limit 512Mi per pod. (Changed from 256Mi: the CRC node already had about 92% of its memory *requests* allocated, leaving only about 790Mi schedulable. Actual free memory is much larger, and the 512Mi limit still protects the node.)
 
 ## 5. The application: `payment-api`
 
@@ -105,7 +105,7 @@ payments-rollout/
 │       └── dto/ (AuthorizeRequest, AuthorizeResponse)
 │   └── src/main/resources/application.yaml
 ├── k8s/
-│   ├── deployment.yaml       <- 5 replicas, probes, preStop, strategy
+│   ├── deployment.yaml       <- 3 replicas, probes, preStop, strategy
 │   ├── service.yaml
 │   └── route.yaml
 ├── k6/
@@ -120,7 +120,7 @@ payments-rollout/
 
 ```yaml
 spec:
-  replicas: 5
+  replicas: 3
   strategy:
     type: RollingUpdate
     rollingUpdate: { maxUnavailable: 0, maxSurge: 1 }
@@ -132,7 +132,7 @@ spec:
         ports: [{ containerPort: 8080 }]
         env: [{ name: APP_VERSION, value: v1 }]
         resources:
-          requests: { cpu: 100m, memory: 256Mi }
+          requests: { cpu: 50m, memory: 96Mi }
           limits:   { memory: 512Mi }
         startupProbe:   { httpGet: {path: /actuator/health/liveness,  port: 8080}, periodSeconds: 5,  failureThreshold: 30 }
         livenessProbe:  { httpGet: {path: /actuator/health/liveness,  port: 8080}, periodSeconds: 10, failureThreshold: 3 }
@@ -182,7 +182,7 @@ The deployment starts **naive** (no probes, no graceful shutdown) and the harden
 | **1** | App skeleton: `pom.xml` (Boot 4, Java 25, 2 deps), main class, `application.yaml`, health endpoints only | Runs on the build pod in phase 3; locally if a JDK is available | `Add Spring Boot skeleton with actuator` |
 | **2** | Payment API: authorize endpoint, idempotency, `bankGateway` health indicator, `APP_VERSION` | Code review, plus a local run if possible | `Add payment authorization API` |
 | **3** | Multi-stage `Dockerfile`, `scripts/build.sh`, in-cluster build | Build `Complete`, image in the ImageStream | `Add Dockerfile and in-cluster build` |
-| **4** | **Naive deploy:** `Deployment` (5 replicas, default strategy, no probes), `Service`, `Route` | 5/5 pods Running, `curl` shows different pod names | `Add naive 5-replica deployment` |
+| **4** | **Naive deploy:** `Deployment` (3 replicas, `maxUnavailable: 1, maxSurge: 1`, no probes), `Service`, `Route` | 3/3 pods Running, `curl` shows different pod names | `Add naive 3-replica deployment` |
 | **5** | `k6/payments-load.js`, baseline run, then a **naive rollout** under load | Baseline has 0 failures. The rollout shows failed or dropped requests (expected). | `Add k6 load test and naive rollout results` |
 | **6** | **Probes** (startup, liveness, readiness) and `maxUnavailable: 0, maxSurge: 1` | Re-run rollout: fewer or no failures from not-ready pods | `Add probes and safe rolling strategy` |
 | **7** | **Graceful shutdown** (`application.yaml`), `preStop` sleep, `terminationGracePeriodSeconds` | Re-run rollout: **zero failures**, versions flip v1 to v2 | `Add graceful shutdown and preStop` |
@@ -190,12 +190,13 @@ The deployment starts **naive** (no probes, no graceful shutdown) and the harden
 
 Notes:
 - Phase 1 and 2 run nowhere until the image is built in phase 3, unless a working local JDK 25 is available. I'll check this at phase 1.
-- Before phase 4, I check CRC capacity with `oc describe node` (room for about 6 pods).
+- Before phase 4, I check CRC capacity with `oc describe node` (room for about 4 pods: 3 replicas plus 1 surge).
 - Results are reported as observed. The naive rollout in phase 5 is not guaranteed to fail, since drops depend on timing.
 
 ## 10. Risks and caveats
 
-- **CRC memory.** 6 JVM pods may not fit on a small VM. Fallback: smaller requests or 3 replicas.
+- **CRC memory.** Reduced to 3 replicas plus 1 surge pod because the node has about 790Mi of schedulable memory requests left.
+- **With 3 replicas the Kubernetes default strategy (25%/25%) already equals `maxUnavailable: 0, maxSurge: 1`.** So the naive Phase 4 sets `maxUnavailable: 1` explicitly, and Phase 6 changes it to 0.
 - **Internet from the build pod** (Maven Central). If blocked, fallback is to build the jar elsewhere and use a runtime-only Dockerfile.
 - **Load generator limits.** The path is Mac to CRC VM to router to pod. A failure could be the router, not the app. The contrast run helps separate the two.
 - **Contrast run is not guaranteed to fail.** Drops depend on timing. I'll report whatever actually happens.
@@ -206,6 +207,6 @@ Notes:
 1. Use case: payment authorization API. **Accepted.**
 2. Idempotency: in-memory with a deterministic `authId`. **Accepted.**
 3. Contrast run: **folded into the phases.** Phase 5 is the naive rollout, and phases 6 and 7 add the fixes.
-4. `Deployment`, in-cluster build, 5 replicas at 256Mi. **Accepted.**
+4. `Deployment`, in-cluster build, **3 replicas** at a 96Mi request (changed from 5 at 256Mi because of CRC memory). **Accepted.**
 5. Stack: Spring Boot 4.x, Java 25, YAML config, two dependencies only. **Requested.**
 6. Workflow: one phase at a time, in a dedicated git repo. The user commits after reviewing each phase. **Requested.**
