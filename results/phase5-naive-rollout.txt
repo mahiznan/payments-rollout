@@ -1,0 +1,1202 @@
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: k6/payments-load.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 300 max VUs, 3m30s max duration (incl. graceful stop):
+              * payments: 40.00 iterations/s for 3m0s (maxVUs: 50-300, gracefulStop: 30s)
+
+
+running (0m01.0s), 020/050 VUs, 20 complete and 0 interrupted iterations
+payments   [   1% ] 020/050 VUs  0m01.0s/3m0s  40.00 iters/s
+
+running (0m02.0s), 019/050 VUs, 61 complete and 0 interrupted iterations
+payments   [   1% ] 019/050 VUs  0m02.0s/3m0s  40.00 iters/s
+
+running (0m03.0s), 019/050 VUs, 101 complete and 0 interrupted iterations
+payments   [   2% ] 019/050 VUs  0m03.0s/3m0s  40.00 iters/s
+
+running (0m04.0s), 022/050 VUs, 138 complete and 0 interrupted iterations
+payments   [   2% ] 022/050 VUs  0m04.0s/3m0s  40.00 iters/s
+
+running (0m05.0s), 017/050 VUs, 183 complete and 0 interrupted iterations
+payments   [   3% ] 017/050 VUs  0m05.0s/3m0s  40.00 iters/s
+
+running (0m06.0s), 019/050 VUs, 221 complete and 0 interrupted iterations
+payments   [   3% ] 019/050 VUs  0m06.0s/3m0s  40.00 iters/s
+
+running (0m07.0s), 021/050 VUs, 259 complete and 0 interrupted iterations
+payments   [   4% ] 021/050 VUs  0m07.0s/3m0s  40.00 iters/s
+
+running (0m08.0s), 021/050 VUs, 299 complete and 0 interrupted iterations
+payments   [   4% ] 021/050 VUs  0m08.0s/3m0s  40.00 iters/s
+
+running (0m09.0s), 021/050 VUs, 339 complete and 0 interrupted iterations
+payments   [   5% ] 021/050 VUs  0m09.0s/3m0s  40.00 iters/s
+
+running (0m10.0s), 020/050 VUs, 380 complete and 0 interrupted iterations
+payments   [   6% ] 020/050 VUs  0m10.0s/3m0s  40.00 iters/s
+
+running (0m11.0s), 018/050 VUs, 422 complete and 0 interrupted iterations
+payments   [   6% ] 018/050 VUs  0m11.0s/3m0s  40.00 iters/s
+
+running (0m12.0s), 019/050 VUs, 461 complete and 0 interrupted iterations
+payments   [   7% ] 019/050 VUs  0m12.0s/3m0s  40.00 iters/s
+
+running (0m13.0s), 018/050 VUs, 502 complete and 0 interrupted iterations
+payments   [   7% ] 018/050 VUs  0m13.0s/3m0s  40.00 iters/s
+
+running (0m14.0s), 017/050 VUs, 543 complete and 0 interrupted iterations
+payments   [   8% ] 017/050 VUs  0m14.0s/3m0s  40.00 iters/s
+
+running (0m15.0s), 023/050 VUs, 577 complete and 0 interrupted iterations
+payments   [   8% ] 023/050 VUs  0m15.0s/3m0s  40.00 iters/s
+
+running (0m16.0s), 017/050 VUs, 623 complete and 0 interrupted iterations
+payments   [   9% ] 017/050 VUs  0m16.0s/3m0s  40.00 iters/s
+
+running (0m17.0s), 021/050 VUs, 659 complete and 0 interrupted iterations
+payments   [   9% ] 021/050 VUs  0m17.0s/3m0s  40.00 iters/s
+
+running (0m18.0s), 023/050 VUs, 697 complete and 0 interrupted iterations
+payments   [  10% ] 023/050 VUs  0m18.0s/3m0s  40.00 iters/s
+
+running (0m19.0s), 016/050 VUs, 744 complete and 0 interrupted iterations
+payments   [  11% ] 016/050 VUs  0m19.0s/3m0s  40.00 iters/s
+
+running (0m20.0s), 024/050 VUs, 776 complete and 0 interrupted iterations
+payments   [  11% ] 024/050 VUs  0m20.0s/3m0s  40.00 iters/s
+
+running (0m21.0s), 019/050 VUs, 821 complete and 0 interrupted iterations
+payments   [  12% ] 019/050 VUs  0m21.0s/3m0s  40.00 iters/s
+
+running (0m22.0s), 021/050 VUs, 859 complete and 0 interrupted iterations
+payments   [  12% ] 021/050 VUs  0m22.0s/3m0s  40.00 iters/s
+
+running (0m23.0s), 019/050 VUs, 901 complete and 0 interrupted iterations
+payments   [  13% ] 019/050 VUs  0m23.0s/3m0s  40.00 iters/s
+
+running (0m24.0s), 019/050 VUs, 941 complete and 0 interrupted iterations
+payments   [  13% ] 019/050 VUs  0m24.0s/3m0s  40.00 iters/s
+
+running (0m25.0s), 021/050 VUs, 979 complete and 0 interrupted iterations
+payments   [  14% ] 021/050 VUs  0m25.0s/3m0s  40.00 iters/s
+
+running (0m26.0s), 022/050 VUs, 1018 complete and 0 interrupted iterations
+payments   [  14% ] 022/050 VUs  0m26.0s/3m0s  40.00 iters/s
+
+running (0m27.0s), 019/050 VUs, 1061 complete and 0 interrupted iterations
+payments   [  15% ] 019/050 VUs  0m27.0s/3m0s  40.00 iters/s
+
+running (0m28.0s), 022/050 VUs, 1098 complete and 0 interrupted iterations
+payments   [  16% ] 022/050 VUs  0m28.0s/3m0s  40.00 iters/s
+
+running (0m29.0s), 018/050 VUs, 1142 complete and 0 interrupted iterations
+payments   [  16% ] 018/050 VUs  0m29.0s/3m0s  40.00 iters/s
+
+running (0m30.0s), 018/050 VUs, 1182 complete and 0 interrupted iterations
+payments   [  17% ] 018/050 VUs  0m30.0s/3m0s  40.00 iters/s
+
+running (0m31.0s), 015/050 VUs, 1225 complete and 0 interrupted iterations
+payments   [  17% ] 015/050 VUs  0m31.0s/3m0s  40.00 iters/s
+
+running (0m32.0s), 018/050 VUs, 1262 complete and 0 interrupted iterations
+payments   [  18% ] 018/050 VUs  0m32.0s/3m0s  40.00 iters/s
+
+running (0m33.0s), 019/050 VUs, 1301 complete and 0 interrupted iterations
+payments   [  18% ] 019/050 VUs  0m33.0s/3m0s  40.00 iters/s
+time="2026-11-12T00:47:15+08:00" level=error msg="2026-11-11T16:47:15.848Z FAIL authorize status=502 error=" source=console
+time="2026-11-12T00:47:16+08:00" level=error msg="2026-11-11T16:47:16.088Z FAIL authorize status=502 error=" source=console
+time="2026-11-12T00:47:16+08:00" level=error msg="2026-11-11T16:47:16.151Z FAIL authorize status=502 error=" source=console
+time="2026-11-12T00:47:16+08:00" level=error msg="2026-11-11T16:47:16.179Z FAIL authorize status=502 error=" source=console
+time="2026-11-12T00:47:16+08:00" level=error msg="2026-11-11T16:47:16.179Z FAIL authorize status=502 error=" source=console
+time="2026-11-12T00:47:16+08:00" level=error msg="2026-11-11T16:47:16.188Z FAIL authorize status=502 error=" source=console
+time="2026-11-12T00:47:16+08:00" level=error msg="2026-11-11T16:47:16.188Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:16+08:00" level=error msg="2026-11-11T16:47:16.189Z FAIL authorize status=502 error=" source=console
+time="2026-11-12T00:47:16+08:00" level=error msg="2026-11-11T16:47:16.189Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:16+08:00" level=error msg="2026-11-11T16:47:16.214Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:16+08:00" level=error msg="2026-11-11T16:47:16.238Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:16+08:00" level=error msg="2026-11-11T16:47:16.258Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:16+08:00" level=error msg="2026-11-11T16:47:16.286Z FAIL authorize status=503 error=" source=console
+
+running (0m34.0s), 008/050 VUs, 1352 complete and 0 interrupted iterations
+payments   [  19% ] 008/050 VUs  0m34.0s/3m0s  40.00 iters/s
+time="2026-11-12T00:47:16+08:00" level=error msg="2026-11-11T16:47:16.319Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:16+08:00" level=error msg="2026-11-11T16:47:16.332Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:16+08:00" level=error msg="2026-11-11T16:47:16.357Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:16+08:00" level=error msg="2026-11-11T16:47:16.384Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:16+08:00" level=error msg="2026-11-11T16:47:16.421Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:16+08:00" level=error msg="2026-11-11T16:47:16.438Z FAIL authorize status=503 error=" source=console
+
+running (0m35.0s), 037/050 VUs, 1363 complete and 0 interrupted iterations
+payments   [  19% ] 037/050 VUs  0m35.0s/3m0s  40.00 iters/s
+
+running (0m36.0s), 063/064 VUs, 1363 complete and 0 interrupted iterations
+payments   [  20% ] 063/064 VUs  0m36.0s/3m0s  40.00 iters/s
+time="2026-11-12T00:47:18+08:00" level=error msg="2026-11-11T16:47:18.939Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:18+08:00" level=error msg="2026-11-11T16:47:18.964Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:18+08:00" level=error msg="2026-11-11T16:47:18.984Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:19+08:00" level=error msg="2026-11-11T16:47:19.013Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:19+08:00" level=error msg="2026-11-11T16:47:19.041Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:19+08:00" level=error msg="2026-11-11T16:47:19.064Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:19+08:00" level=error msg="2026-11-11T16:47:19.089Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:19+08:00" level=error msg="2026-11-11T16:47:19.110Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:19+08:00" level=error msg="2026-11-11T16:47:19.141Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:19+08:00" level=error msg="2026-11-11T16:47:19.159Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:19+08:00" level=error msg="2026-11-11T16:47:19.189Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:19+08:00" level=error msg="2026-11-11T16:47:19.215Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:19+08:00" level=error msg="2026-11-11T16:47:19.234Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:19+08:00" level=error msg="2026-11-11T16:47:19.260Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:19+08:00" level=error msg="2026-11-11T16:47:19.284Z FAIL authorize status=503 error=" source=console
+
+running (0m37.0s), 075/077 VUs, 1378 complete and 0 interrupted iterations
+payments   [  21% ] 075/077 VUs  0m37.0s/3m0s  40.00 iters/s
+time="2026-11-12T00:47:19+08:00" level=error msg="2026-11-11T16:47:19.314Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:19+08:00" level=error msg="2026-11-11T16:47:19.334Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:19+08:00" level=error msg="2026-11-11T16:47:19.363Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:19+08:00" level=error msg="2026-11-11T16:47:19.384Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:19+08:00" level=error msg="2026-11-11T16:47:19.417Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:19+08:00" level=error msg="2026-11-11T16:47:19.435Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:19+08:00" level=error msg="2026-11-11T16:47:19.460Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:19+08:00" level=error msg="2026-11-11T16:47:19.484Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:19+08:00" level=error msg="2026-11-11T16:47:19.513Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:19+08:00" level=error msg="2026-11-11T16:47:19.535Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:19+08:00" level=error msg="2026-11-11T16:47:19.559Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:19+08:00" level=error msg="2026-11-11T16:47:19.584Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:19+08:00" level=error msg="2026-11-11T16:47:19.615Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:19+08:00" level=error msg="2026-11-11T16:47:19.635Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:19+08:00" level=error msg="2026-11-11T16:47:19.660Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:19+08:00" level=error msg="2026-11-11T16:47:19.684Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:19+08:00" level=error msg="2026-11-11T16:47:19.715Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:19+08:00" level=error msg="2026-11-11T16:47:19.740Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:19+08:00" level=error msg="2026-11-11T16:47:19.760Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:19+08:00" level=error msg="2026-11-11T16:47:19.784Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:19+08:00" level=error msg="2026-11-11T16:47:19.814Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:19+08:00" level=error msg="2026-11-11T16:47:19.834Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:19+08:00" level=error msg="2026-11-11T16:47:19.864Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:19+08:00" level=error msg="2026-11-11T16:47:19.884Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:19+08:00" level=error msg="2026-11-11T16:47:19.913Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:19+08:00" level=error msg="2026-11-11T16:47:19.934Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:19+08:00" level=error msg="2026-11-11T16:47:19.959Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:19+08:00" level=error msg="2026-11-11T16:47:19.990Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:20+08:00" level=error msg="2026-11-11T16:47:20.014Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:20+08:00" level=error msg="2026-11-11T16:47:20.033Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:20+08:00" level=error msg="2026-11-11T16:47:20.060Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:20+08:00" level=error msg="2026-11-11T16:47:20.084Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:20+08:00" level=error msg="2026-11-11T16:47:20.109Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:20+08:00" level=error msg="2026-11-11T16:47:20.134Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:20+08:00" level=error msg="2026-11-11T16:47:20.164Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:20+08:00" level=error msg="2026-11-11T16:47:20.185Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:20+08:00" level=error msg="2026-11-11T16:47:20.214Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:20+08:00" level=error msg="2026-11-11T16:47:20.234Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:20+08:00" level=error msg="2026-11-11T16:47:20.261Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:20+08:00" level=error msg="2026-11-11T16:47:20.284Z FAIL authorize status=503 error=" source=console
+
+running (0m38.0s), 075/077 VUs, 1418 complete and 0 interrupted iterations
+payments   [  21% ] 075/077 VUs  0m38.0s/3m0s  40.00 iters/s
+time="2026-11-12T00:47:20+08:00" level=error msg="2026-11-11T16:47:20.317Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:20+08:00" level=error msg="2026-11-11T16:47:20.338Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:20+08:00" level=error msg="2026-11-11T16:47:20.361Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:20+08:00" level=error msg="2026-11-11T16:47:20.383Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:20+08:00" level=error msg="2026-11-11T16:47:20.414Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:20+08:00" level=error msg="2026-11-11T16:47:20.435Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:20+08:00" level=error msg="2026-11-11T16:47:20.459Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:20+08:00" level=error msg="2026-11-11T16:47:20.488Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:20+08:00" level=error msg="2026-11-11T16:47:20.510Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:20+08:00" level=error msg="2026-11-11T16:47:20.542Z FAIL authorize status=503 error=" source=console
+
+running (0m39.0s), 091/091 VUs, 1428 complete and 0 interrupted iterations
+payments   [  22% ] 091/091 VUs  0m39.0s/3m0s  40.00 iters/s
+time="2026-11-12T00:47:22+08:00" level=error msg="2026-11-11T16:47:22.239Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:22+08:00" level=error msg="2026-11-11T16:47:22.265Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:22+08:00" level=error msg="2026-11-11T16:47:22.289Z FAIL authorize status=503 error=" source=console
+
+running (0m40.0s), 109/110 VUs, 1431 complete and 0 interrupted iterations
+payments   [  22% ] 109/110 VUs  0m40.0s/3m0s  40.00 iters/s
+time="2026-11-12T00:47:22+08:00" level=error msg="2026-11-11T16:47:22.310Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:22+08:00" level=error msg="2026-11-11T16:47:22.333Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:22+08:00" level=error msg="2026-11-11T16:47:22.359Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:22+08:00" level=error msg="2026-11-11T16:47:22.400Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:22+08:00" level=error msg="2026-11-11T16:47:22.417Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:22+08:00" level=error msg="2026-11-11T16:47:22.434Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:22+08:00" level=error msg="2026-11-11T16:47:22.464Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:22+08:00" level=error msg="2026-11-11T16:47:22.484Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:22+08:00" level=error msg="2026-11-11T16:47:22.510Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:22+08:00" level=error msg="2026-11-11T16:47:22.533Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:22+08:00" level=error msg="2026-11-11T16:47:22.560Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:22+08:00" level=error msg="2026-11-11T16:47:22.591Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:22+08:00" level=error msg="2026-11-11T16:47:22.614Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:22+08:00" level=error msg="2026-11-11T16:47:22.636Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:22+08:00" level=error msg="2026-11-11T16:47:22.663Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:22+08:00" level=error msg="2026-11-11T16:47:22.689Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:22+08:00" level=error msg="2026-11-11T16:47:22.713Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:22+08:00" level=error msg="2026-11-11T16:47:22.733Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:22+08:00" level=error msg="2026-11-11T16:47:22.763Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:22+08:00" level=error msg="2026-11-11T16:47:22.784Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:22+08:00" level=error msg="2026-11-11T16:47:22.814Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:22+08:00" level=error msg="2026-11-11T16:47:22.841Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:22+08:00" level=error msg="2026-11-11T16:47:22.859Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:22+08:00" level=error msg="2026-11-11T16:47:22.887Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:22+08:00" level=error msg="2026-11-11T16:47:22.915Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:22+08:00" level=error msg="2026-11-11T16:47:22.936Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:22+08:00" level=error msg="2026-11-11T16:47:22.959Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:22+08:00" level=error msg="2026-11-11T16:47:22.989Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.010Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.040Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.058Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.088Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.109Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.140Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.159Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.184Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.214Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.266Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.268Z FAIL authorize status=503 error=" source=console
+
+running (0m41.0s), 109/111 VUs, 1470 complete and 0 interrupted iterations
+payments   [  23% ] 109/111 VUs  0m41.0s/3m0s  40.00 iters/s
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.339Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.340Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.341Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.341Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.348Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.405Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.409Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.410Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.410Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.464Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.471Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.471Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.485Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.485Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.515Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.533Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.540Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.563Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.567Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.590Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.592Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.597Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.609Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.635Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.640Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.648Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.667Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.683Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.689Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.698Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.710Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.733Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.743Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.743Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.759Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.784Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.790Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.791Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.817Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.834Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.843Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.848Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.863Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.883Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.898Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.900Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.909Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.934Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.941Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.942Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.963Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.984Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.989Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:23+08:00" level=error msg="2026-11-11T16:47:23.997Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.015Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.034Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.048Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.060Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.060Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.082Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.089Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.089Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.109Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.133Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.139Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.139Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.160Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.183Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.191Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.191Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.209Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.233Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.259Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.283Z FAIL authorize status=503 error=" source=console
+
+running (0m42.0s), 075/111 VUs, 1544 complete and 0 interrupted iterations
+payments   [  23% ] 075/111 VUs  0m42.0s/3m0s  40.00 iters/s
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.313Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.333Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.363Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.383Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.409Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.433Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.459Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.483Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.510Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.534Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.560Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.583Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.609Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.633Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.660Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.683Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.708Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.746Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.761Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.787Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.813Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.834Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.868Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.884Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.909Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.934Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.959Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:24+08:00" level=error msg="2026-11-11T16:47:24.984Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:25+08:00" level=error msg="2026-11-11T16:47:25.013Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:25+08:00" level=error msg="2026-11-11T16:47:25.034Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:25+08:00" level=error msg="2026-11-11T16:47:25.060Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:25+08:00" level=error msg="2026-11-11T16:47:25.084Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:25+08:00" level=error msg="2026-11-11T16:47:25.115Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:25+08:00" level=error msg="2026-11-11T16:47:25.133Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:25+08:00" level=error msg="2026-11-11T16:47:25.164Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:25+08:00" level=error msg="2026-11-11T16:47:25.183Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:25+08:00" level=error msg="2026-11-11T16:47:25.214Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:25+08:00" level=error msg="2026-11-11T16:47:25.233Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:25+08:00" level=error msg="2026-11-11T16:47:25.265Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:25+08:00" level=error msg="2026-11-11T16:47:25.283Z FAIL authorize status=503 error=" source=console
+
+running (0m43.0s), 075/111 VUs, 1584 complete and 0 interrupted iterations
+payments   [  24% ] 075/111 VUs  0m43.0s/3m0s  40.00 iters/s
+time="2026-11-12T00:47:25+08:00" level=error msg="2026-11-11T16:47:25.309Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:25+08:00" level=error msg="2026-11-11T16:47:25.333Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:25+08:00" level=error msg="2026-11-11T16:47:25.360Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:25+08:00" level=error msg="2026-11-11T16:47:25.384Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:25+08:00" level=error msg="2026-11-11T16:47:25.410Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:25+08:00" level=error msg="2026-11-11T16:47:25.433Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:25+08:00" level=error msg="2026-11-11T16:47:25.465Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:25+08:00" level=error msg="2026-11-11T16:47:25.483Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:25+08:00" level=error msg="2026-11-11T16:47:25.514Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:25+08:00" level=error msg="2026-11-11T16:47:25.538Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:25+08:00" level=error msg="2026-11-11T16:47:25.559Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:25+08:00" level=error msg="2026-11-11T16:47:25.583Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:25+08:00" level=error msg="2026-11-11T16:47:25.609Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:25+08:00" level=error msg="2026-11-11T16:47:25.634Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:25+08:00" level=error msg="2026-11-11T16:47:25.663Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:25+08:00" level=error msg="2026-11-11T16:47:25.683Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:25+08:00" level=error msg="2026-11-11T16:47:25.709Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:25+08:00" level=error msg="2026-11-11T16:47:25.733Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:25+08:00" level=error msg="2026-11-11T16:47:25.765Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:25+08:00" level=error msg="2026-11-11T16:47:25.782Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:25+08:00" level=error msg="2026-11-11T16:47:25.809Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:25+08:00" level=error msg="2026-11-11T16:47:25.833Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:25+08:00" level=error msg="2026-11-11T16:47:25.863Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:25+08:00" level=error msg="2026-11-11T16:47:25.883Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:25+08:00" level=error msg="2026-11-11T16:47:25.910Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:25+08:00" level=error msg="2026-11-11T16:47:25.933Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:25+08:00" level=error msg="2026-11-11T16:47:25.959Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:25+08:00" level=error msg="2026-11-11T16:47:25.983Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.014Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.033Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.060Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.083Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.110Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.133Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.159Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.183Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.209Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:26+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.220Z FAIL retry status=0 error=request timeout" source=console
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.233Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.259Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.288Z FAIL authorize status=503 error=" source=console
+
+running (0m44.0s), 074/111 VUs, 1625 complete and 0 interrupted iterations
+payments   [  24% ] 074/111 VUs  0m44.0s/3m0s  40.00 iters/s
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.309Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:26+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.328Z FAIL retry status=0 error=request timeout" source=console
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.340Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.359Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.383Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.409Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:26+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.429Z FAIL retry status=0 error=request timeout" source=console
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.433Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:26+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.456Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.460Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:26+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.481Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.483Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:26+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.506Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.508Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:26+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.532Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.535Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:26+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.556Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.559Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:26+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.582Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.584Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:26+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.607Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.609Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:26+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.632Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.633Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:26+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.657Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.660Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:26+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.681Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.684Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:26+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.706Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.709Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:26+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.732Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.733Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:26+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.756Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.763Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:26+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.782Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.783Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:26+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.807Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.809Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:26+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.831Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.833Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:26+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.856Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.858Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:26+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.882Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.884Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:26+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.907Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.909Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:26+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.931Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.934Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:26+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.957Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.958Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:26+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.981Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:26+08:00" level=error msg="2026-11-11T16:47:26.983Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:27+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.007Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.009Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:27+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.031Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.034Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:27+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.056Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.069Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:27+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.081Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.082Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:27+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.107Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.110Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:27+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.131Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.134Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:27+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.156Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.159Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:27+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.182Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.184Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:27+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.207Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.208Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:27+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.232Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.233Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:27+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.256Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.260Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:27+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.282Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.283Z FAIL authorize status=503 error=" source=console
+
+running (0m45.0s), 038/111 VUs, 1701 complete and 0 interrupted iterations
+payments   [  25% ] 038/111 VUs  0m45.0s/3m0s  40.00 iters/s
+time="2026-11-12T00:47:27+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.307Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.309Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:27+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.331Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.333Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:27+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.356Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.359Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:27+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.382Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.383Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:27+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.406Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.409Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:27+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.431Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.433Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:27+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.457Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.460Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:27+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.482Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.483Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:27+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.507Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.508Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:27+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.532Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.534Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:27+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.556Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.559Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:27+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.581Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.584Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:27+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.607Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.609Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.633Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:27+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.657Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.665Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.683Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:27+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.707Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.709Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.733Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:27+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.757Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.760Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.783Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:27+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.807Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.808Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.833Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:27+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.857Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.858Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.883Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:27+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.907Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.908Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.933Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:27+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.957Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.960Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:27+08:00" level=error msg="2026-11-11T16:47:27.983Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:28+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.007Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.010Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.033Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:28+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.057Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.058Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.083Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:28+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.107Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.110Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.133Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:28+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.157Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.166Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.184Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:28+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.206Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.208Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.233Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:28+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.257Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.264Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.283Z FAIL authorize status=503 error=" source=console
+
+running (0m46.0s), 012/111 VUs, 1767 complete and 0 interrupted iterations
+payments   [  26% ] 012/111 VUs  0m46.0s/3m0s  40.00 iters/s
+time="2026-11-12T00:47:28+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.306Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.309Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.333Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:28+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.356Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.360Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.383Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:28+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.406Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.409Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.434Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:28+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.456Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.459Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.483Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:28+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.507Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.509Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.533Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:28+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.556Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.573Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.586Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:28+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.607Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.609Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.633Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:28+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.657Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.664Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.684Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:28+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.707Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.708Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.734Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:28+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.756Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.760Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.786Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:28+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.806Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.810Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.834Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:28+08:00" level=warning msg="Request Failed" error="Post \"http://payment-api-my-project.apps-crc.testing/api/v1/payments/authorize\": request timeout"
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.856Z FAIL authorize status=0 error=request timeout" source=console
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.858Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.884Z FAIL authorize status=503 error=" source=console
+time="2026-11-12T00:47:28+08:00" level=error msg="2026-11-11T16:47:28.911Z FAIL authorize status=503 error=" source=console
+
+running (0m47.0s), 015/111 VUs, 1804 complete and 0 interrupted iterations
+payments   [  26% ] 015/111 VUs  0m47.0s/3m0s  40.00 iters/s
+
+running (0m48.0s), 018/111 VUs, 1841 complete and 0 interrupted iterations
+payments   [  27% ] 018/111 VUs  0m48.0s/3m0s  40.00 iters/s
+
+running (0m49.0s), 024/111 VUs, 1875 complete and 0 interrupted iterations
+payments   [  27% ] 024/111 VUs  0m49.0s/3m0s  40.00 iters/s
+
+running (0m50.0s), 019/111 VUs, 1920 complete and 0 interrupted iterations
+payments   [  28% ] 019/111 VUs  0m50.0s/3m0s  40.00 iters/s
+
+running (0m51.0s), 022/111 VUs, 1957 complete and 0 interrupted iterations
+payments   [  28% ] 022/111 VUs  0m51.0s/3m0s  40.00 iters/s
+
+running (0m52.0s), 018/111 VUs, 2001 complete and 0 interrupted iterations
+payments   [  29% ] 018/111 VUs  0m52.0s/3m0s  40.00 iters/s
+
+running (0m53.0s), 022/111 VUs, 2037 complete and 0 interrupted iterations
+payments   [  29% ] 022/111 VUs  0m53.0s/3m0s  40.00 iters/s
+
+running (0m54.0s), 020/111 VUs, 2079 complete and 0 interrupted iterations
+payments   [  30% ] 020/111 VUs  0m54.0s/3m0s  40.00 iters/s
+
+running (0m55.0s), 021/111 VUs, 2118 complete and 0 interrupted iterations
+payments   [  31% ] 021/111 VUs  0m55.0s/3m0s  40.00 iters/s
+
+running (0m56.0s), 020/111 VUs, 2159 complete and 0 interrupted iterations
+payments   [  31% ] 020/111 VUs  0m56.0s/3m0s  40.00 iters/s
+
+running (0m57.0s), 021/111 VUs, 2198 complete and 0 interrupted iterations
+payments   [  32% ] 021/111 VUs  0m57.0s/3m0s  40.00 iters/s
+
+running (0m58.0s), 021/111 VUs, 2238 complete and 0 interrupted iterations
+payments   [  32% ] 021/111 VUs  0m58.0s/3m0s  40.00 iters/s
+
+running (0m59.0s), 018/111 VUs, 2281 complete and 0 interrupted iterations
+payments   [  33% ] 018/111 VUs  0m59.0s/3m0s  40.00 iters/s
+
+running (1m00.0s), 022/111 VUs, 2317 complete and 0 interrupted iterations
+payments   [  33% ] 022/111 VUs  1m00.0s/3m0s  40.00 iters/s
+
+running (1m01.0s), 020/111 VUs, 2359 complete and 0 interrupted iterations
+payments   [  34% ] 020/111 VUs  1m01.0s/3m0s  40.00 iters/s
+
+running (1m02.0s), 021/111 VUs, 2398 complete and 0 interrupted iterations
+payments   [  34% ] 021/111 VUs  1m02.0s/3m0s  40.00 iters/s
+
+running (1m03.0s), 023/111 VUs, 2436 complete and 0 interrupted iterations
+payments   [  35% ] 023/111 VUs  1m03.0s/3m0s  40.00 iters/s
+
+running (1m04.0s), 023/111 VUs, 2476 complete and 0 interrupted iterations
+payments   [  36% ] 023/111 VUs  1m04.0s/3m0s  40.00 iters/s
+
+running (1m05.0s), 020/111 VUs, 2519 complete and 0 interrupted iterations
+payments   [  36% ] 020/111 VUs  1m05.0s/3m0s  40.00 iters/s
+
+running (1m06.0s), 018/111 VUs, 2561 complete and 0 interrupted iterations
+payments   [  37% ] 018/111 VUs  1m06.0s/3m0s  40.00 iters/s
+
+running (1m07.0s), 023/111 VUs, 2596 complete and 0 interrupted iterations
+payments   [  37% ] 023/111 VUs  1m07.0s/3m0s  40.00 iters/s
+
+running (1m08.0s), 019/111 VUs, 2640 complete and 0 interrupted iterations
+payments   [  38% ] 019/111 VUs  1m08.0s/3m0s  40.00 iters/s
+
+running (1m09.0s), 021/111 VUs, 2678 complete and 0 interrupted iterations
+payments   [  38% ] 021/111 VUs  1m09.0s/3m0s  40.00 iters/s
+
+running (1m10.0s), 015/111 VUs, 2724 complete and 0 interrupted iterations
+payments   [  39% ] 015/111 VUs  1m10.0s/3m0s  40.00 iters/s
+
+running (1m11.0s), 019/111 VUs, 2760 complete and 0 interrupted iterations
+payments   [  39% ] 019/111 VUs  1m11.0s/3m0s  40.00 iters/s
+
+running (1m12.0s), 022/111 VUs, 2797 complete and 0 interrupted iterations
+payments   [  40% ] 022/111 VUs  1m12.0s/3m0s  40.00 iters/s
+
+running (1m13.0s), 022/111 VUs, 2837 complete and 0 interrupted iterations
+payments   [  41% ] 022/111 VUs  1m13.0s/3m0s  40.00 iters/s
+
+running (1m14.0s), 020/111 VUs, 2879 complete and 0 interrupted iterations
+payments   [  41% ] 020/111 VUs  1m14.0s/3m0s  40.00 iters/s
+
+running (1m15.0s), 019/111 VUs, 2920 complete and 0 interrupted iterations
+payments   [  42% ] 019/111 VUs  1m15.0s/3m0s  40.00 iters/s
+
+running (1m16.0s), 021/111 VUs, 2958 complete and 0 interrupted iterations
+payments   [  42% ] 021/111 VUs  1m16.0s/3m0s  40.00 iters/s
+
+running (1m17.0s), 022/111 VUs, 2997 complete and 0 interrupted iterations
+payments   [  43% ] 022/111 VUs  1m17.0s/3m0s  40.00 iters/s
+
+running (1m18.0s), 020/111 VUs, 3039 complete and 0 interrupted iterations
+payments   [  43% ] 020/111 VUs  1m18.0s/3m0s  40.00 iters/s
+
+running (1m19.0s), 017/111 VUs, 3082 complete and 0 interrupted iterations
+payments   [  44% ] 017/111 VUs  1m19.0s/3m0s  40.00 iters/s
+
+running (1m20.0s), 018/111 VUs, 3121 complete and 0 interrupted iterations
+payments   [  44% ] 018/111 VUs  1m20.0s/3m0s  40.00 iters/s
+
+running (1m21.0s), 021/111 VUs, 3158 complete and 0 interrupted iterations
+payments   [  45% ] 021/111 VUs  1m21.0s/3m0s  40.00 iters/s
+
+running (1m22.0s), 021/111 VUs, 3198 complete and 0 interrupted iterations
+payments   [  46% ] 021/111 VUs  1m22.0s/3m0s  40.00 iters/s
+
+running (1m23.0s), 020/111 VUs, 3239 complete and 0 interrupted iterations
+payments   [  46% ] 020/111 VUs  1m23.0s/3m0s  40.00 iters/s
+
+running (1m24.0s), 023/111 VUs, 3276 complete and 0 interrupted iterations
+payments   [  47% ] 023/111 VUs  1m24.0s/3m0s  40.00 iters/s
+
+running (1m25.0s), 024/111 VUs, 3315 complete and 0 interrupted iterations
+payments   [  47% ] 024/111 VUs  1m25.0s/3m0s  40.00 iters/s
+
+running (1m26.0s), 021/111 VUs, 3358 complete and 0 interrupted iterations
+payments   [  48% ] 021/111 VUs  1m26.0s/3m0s  40.00 iters/s
+
+running (1m27.0s), 020/111 VUs, 3399 complete and 0 interrupted iterations
+payments   [  48% ] 020/111 VUs  1m27.0s/3m0s  40.00 iters/s
+
+running (1m28.0s), 018/111 VUs, 3441 complete and 0 interrupted iterations
+payments   [  49% ] 018/111 VUs  1m28.0s/3m0s  40.00 iters/s
+
+running (1m29.0s), 021/111 VUs, 3478 complete and 0 interrupted iterations
+payments   [  49% ] 021/111 VUs  1m29.0s/3m0s  40.00 iters/s
+
+running (1m30.0s), 023/111 VUs, 3516 complete and 0 interrupted iterations
+payments   [  50% ] 023/111 VUs  1m30.0s/3m0s  40.00 iters/s
+
+running (1m30.3s), 019/111 VUs, 3531 complete and 0 interrupted iterations
+payments   [  50% ] 019/111 VUs  1m30.3s/3m0s  40.00 iters/s
+
+running (1m30.5s), 017/111 VUs, 3542 complete and 0 interrupted iterations
+payments   [  50% ] 017/111 VUs  1m30.5s/3m0s  40.00 iters/s
+
+running (1m30.7s), 022/111 VUs, 3546 complete and 0 interrupted iterations
+payments   [  50% ] 022/111 VUs  1m30.7s/3m0s  40.00 iters/s
+
+running (1m31.0s), 020/111 VUs, 3559 complete and 0 interrupted iterations
+payments   [  51% ] 020/111 VUs  1m31.0s/3m0s  40.00 iters/s
+
+running (1m32.0s), 022/111 VUs, 3597 complete and 0 interrupted iterations
+payments   [  51% ] 022/111 VUs  1m32.0s/3m0s  40.00 iters/s
+
+running (1m32.9s), 021/111 VUs, 3634 complete and 0 interrupted iterations
+payments   [  52% ] 021/111 VUs  1m32.9s/3m0s  40.00 iters/s
+
+running (1m33.0s), 022/111 VUs, 3637 complete and 0 interrupted iterations
+payments   [  52% ] 022/111 VUs  1m33.0s/3m0s  40.00 iters/s
+
+running (1m33.1s), 019/111 VUs, 3644 complete and 0 interrupted iterations
+payments   [  52% ] 019/111 VUs  1m33.1s/3m0s  40.00 iters/s
+
+running (1m33.3s), 018/111 VUs, 3653 complete and 0 interrupted iterations
+payments   [  52% ] 018/111 VUs  1m33.3s/3m0s  40.00 iters/s
+
+running (1m33.5s), 017/111 VUs, 3662 complete and 0 interrupted iterations
+payments   [  52% ] 017/111 VUs  1m33.5s/3m0s  40.00 iters/s
+
+running (1m34.0s), 018/111 VUs, 3681 complete and 0 interrupted iterations
+payments   [  52% ] 018/111 VUs  1m34.0s/3m0s  40.00 iters/s
+
+running (1m35.0s), 021/111 VUs, 3718 complete and 0 interrupted iterations
+payments   [  53% ] 021/111 VUs  1m35.0s/3m0s  40.00 iters/s
+
+running (1m36.0s), 022/111 VUs, 3757 complete and 0 interrupted iterations
+payments   [  53% ] 022/111 VUs  1m36.0s/3m0s  40.00 iters/s
+
+running (1m37.0s), 020/111 VUs, 3799 complete and 0 interrupted iterations
+payments   [  54% ] 020/111 VUs  1m37.0s/3m0s  40.00 iters/s
+
+running (1m38.0s), 020/111 VUs, 3839 complete and 0 interrupted iterations
+payments   [  54% ] 020/111 VUs  1m38.0s/3m0s  40.00 iters/s
+
+running (1m39.0s), 019/111 VUs, 3880 complete and 0 interrupted iterations
+payments   [  55% ] 019/111 VUs  1m39.0s/3m0s  40.00 iters/s
+
+running (1m40.0s), 016/111 VUs, 3923 complete and 0 interrupted iterations
+payments   [  56% ] 016/111 VUs  1m40.0s/3m0s  40.00 iters/s
+
+running (1m41.0s), 018/111 VUs, 3961 complete and 0 interrupted iterations
+payments   [  56% ] 018/111 VUs  1m41.0s/3m0s  40.00 iters/s
+
+running (1m42.0s), 020/111 VUs, 3999 complete and 0 interrupted iterations
+payments   [  57% ] 020/111 VUs  1m42.0s/3m0s  40.00 iters/s
+
+running (1m43.0s), 018/111 VUs, 4041 complete and 0 interrupted iterations
+payments   [  57% ] 018/111 VUs  1m43.0s/3m0s  40.00 iters/s
+
+running (1m44.0s), 022/111 VUs, 4077 complete and 0 interrupted iterations
+payments   [  58% ] 022/111 VUs  1m44.0s/3m0s  40.00 iters/s
+
+running (1m45.0s), 021/111 VUs, 4118 complete and 0 interrupted iterations
+payments   [  58% ] 021/111 VUs  1m45.0s/3m0s  40.00 iters/s
+
+running (1m46.0s), 022/111 VUs, 4157 complete and 0 interrupted iterations
+payments   [  59% ] 022/111 VUs  1m46.0s/3m0s  40.00 iters/s
+
+running (1m47.0s), 019/111 VUs, 4200 complete and 0 interrupted iterations
+payments   [  59% ] 019/111 VUs  1m47.0s/3m0s  40.00 iters/s
+
+running (1m48.0s), 020/111 VUs, 4239 complete and 0 interrupted iterations
+payments   [  60% ] 020/111 VUs  1m48.0s/3m0s  40.00 iters/s
+
+running (1m49.0s), 023/111 VUs, 4276 complete and 0 interrupted iterations
+payments   [  61% ] 023/111 VUs  1m49.0s/3m0s  40.00 iters/s
+
+running (1m50.0s), 018/111 VUs, 4321 complete and 0 interrupted iterations
+payments   [  61% ] 018/111 VUs  1m50.0s/3m0s  40.00 iters/s
+
+running (1m51.0s), 020/111 VUs, 4359 complete and 0 interrupted iterations
+payments   [  62% ] 020/111 VUs  1m51.0s/3m0s  40.00 iters/s
+
+running (1m52.0s), 020/111 VUs, 4399 complete and 0 interrupted iterations
+payments   [  62% ] 020/111 VUs  1m52.0s/3m0s  40.00 iters/s
+
+running (1m53.0s), 017/111 VUs, 4442 complete and 0 interrupted iterations
+payments   [  63% ] 017/111 VUs  1m53.0s/3m0s  40.00 iters/s
+
+running (1m54.0s), 023/111 VUs, 4476 complete and 0 interrupted iterations
+payments   [  63% ] 023/111 VUs  1m54.0s/3m0s  40.00 iters/s
+
+running (1m55.0s), 017/111 VUs, 4522 complete and 0 interrupted iterations
+payments   [  64% ] 017/111 VUs  1m55.0s/3m0s  40.00 iters/s
+
+running (1m56.0s), 020/111 VUs, 4559 complete and 0 interrupted iterations
+payments   [  64% ] 020/111 VUs  1m56.0s/3m0s  40.00 iters/s
+
+running (1m57.0s), 018/111 VUs, 4601 complete and 0 interrupted iterations
+payments   [  65% ] 018/111 VUs  1m57.0s/3m0s  40.00 iters/s
+
+running (1m58.0s), 021/111 VUs, 4638 complete and 0 interrupted iterations
+payments   [  66% ] 021/111 VUs  1m58.0s/3m0s  40.00 iters/s
+
+running (1m59.0s), 020/111 VUs, 4679 complete and 0 interrupted iterations
+payments   [  66% ] 020/111 VUs  1m59.0s/3m0s  40.00 iters/s
+
+running (2m00.0s), 023/111 VUs, 4716 complete and 0 interrupted iterations
+payments   [  67% ] 023/111 VUs  2m00.0s/3m0s  40.00 iters/s
+
+running (2m01.0s), 020/111 VUs, 4759 complete and 0 interrupted iterations
+payments   [  67% ] 020/111 VUs  2m01.0s/3m0s  40.00 iters/s
+
+running (2m02.0s), 018/111 VUs, 4801 complete and 0 interrupted iterations
+payments   [  68% ] 018/111 VUs  2m02.0s/3m0s  40.00 iters/s
+
+running (2m03.0s), 020/111 VUs, 4839 complete and 0 interrupted iterations
+payments   [  68% ] 020/111 VUs  2m03.0s/3m0s  40.00 iters/s
+
+running (2m04.0s), 019/111 VUs, 4880 complete and 0 interrupted iterations
+payments   [  69% ] 019/111 VUs  2m04.0s/3m0s  40.00 iters/s
+
+running (2m05.0s), 016/111 VUs, 4923 complete and 0 interrupted iterations
+payments   [  69% ] 016/111 VUs  2m05.0s/3m0s  40.00 iters/s
+
+running (2m06.0s), 017/111 VUs, 4962 complete and 0 interrupted iterations
+payments   [  70% ] 017/111 VUs  2m06.0s/3m0s  40.00 iters/s
+
+running (2m07.0s), 022/111 VUs, 4997 complete and 0 interrupted iterations
+payments   [  71% ] 022/111 VUs  2m07.0s/3m0s  40.00 iters/s
+
+running (2m08.0s), 019/111 VUs, 5040 complete and 0 interrupted iterations
+payments   [  71% ] 019/111 VUs  2m08.0s/3m0s  40.00 iters/s
+
+running (2m09.0s), 018/111 VUs, 5081 complete and 0 interrupted iterations
+payments   [  72% ] 018/111 VUs  2m09.0s/3m0s  40.00 iters/s
+
+running (2m10.0s), 017/111 VUs, 5122 complete and 0 interrupted iterations
+payments   [  72% ] 017/111 VUs  2m10.0s/3m0s  40.00 iters/s
+
+running (2m11.0s), 017/111 VUs, 5162 complete and 0 interrupted iterations
+payments   [  73% ] 017/111 VUs  2m11.0s/3m0s  40.00 iters/s
+
+running (2m12.0s), 024/111 VUs, 5195 complete and 0 interrupted iterations
+payments   [  73% ] 024/111 VUs  2m12.0s/3m0s  40.00 iters/s
+
+running (2m13.0s), 018/111 VUs, 5241 complete and 0 interrupted iterations
+payments   [  74% ] 018/111 VUs  2m13.0s/3m0s  40.00 iters/s
+
+running (2m14.0s), 018/111 VUs, 5281 complete and 0 interrupted iterations
+payments   [  74% ] 018/111 VUs  2m14.0s/3m0s  40.00 iters/s
+
+running (2m15.0s), 022/111 VUs, 5317 complete and 0 interrupted iterations
+payments   [  75% ] 022/111 VUs  2m15.0s/3m0s  40.00 iters/s
+
+running (2m16.0s), 020/111 VUs, 5359 complete and 0 interrupted iterations
+payments   [  76% ] 020/111 VUs  2m16.0s/3m0s  40.00 iters/s
+
+running (2m17.0s), 021/111 VUs, 5398 complete and 0 interrupted iterations
+payments   [  76% ] 021/111 VUs  2m17.0s/3m0s  40.00 iters/s
+
+running (2m18.0s), 024/111 VUs, 5435 complete and 0 interrupted iterations
+payments   [  77% ] 024/111 VUs  2m18.0s/3m0s  40.00 iters/s
+
+running (2m19.0s), 019/111 VUs, 5480 complete and 0 interrupted iterations
+payments   [  77% ] 019/111 VUs  2m19.0s/3m0s  40.00 iters/s
+
+running (2m20.0s), 015/111 VUs, 5524 complete and 0 interrupted iterations
+payments   [  78% ] 015/111 VUs  2m20.0s/3m0s  40.00 iters/s
+
+running (2m21.0s), 024/111 VUs, 5555 complete and 0 interrupted iterations
+payments   [  78% ] 024/111 VUs  2m21.0s/3m0s  40.00 iters/s
+
+running (2m22.0s), 020/111 VUs, 5599 complete and 0 interrupted iterations
+payments   [  79% ] 020/111 VUs  2m22.0s/3m0s  40.00 iters/s
+
+running (2m23.0s), 021/111 VUs, 5638 complete and 0 interrupted iterations
+payments   [  79% ] 021/111 VUs  2m23.0s/3m0s  40.00 iters/s
+
+running (2m24.0s), 021/111 VUs, 5678 complete and 0 interrupted iterations
+payments   [  80% ] 021/111 VUs  2m24.0s/3m0s  40.00 iters/s
+
+running (2m25.0s), 020/111 VUs, 5719 complete and 0 interrupted iterations
+payments   [  81% ] 020/111 VUs  2m25.0s/3m0s  40.00 iters/s
+
+running (2m26.0s), 022/111 VUs, 5757 complete and 0 interrupted iterations
+payments   [  81% ] 022/111 VUs  2m26.0s/3m0s  40.00 iters/s
+
+running (2m27.0s), 021/111 VUs, 5798 complete and 0 interrupted iterations
+payments   [  82% ] 021/111 VUs  2m27.0s/3m0s  40.00 iters/s
+
+running (2m28.0s), 023/111 VUs, 5836 complete and 0 interrupted iterations
+payments   [  82% ] 023/111 VUs  2m28.0s/3m0s  40.00 iters/s
+
+running (2m29.0s), 021/111 VUs, 5878 complete and 0 interrupted iterations
+payments   [  83% ] 021/111 VUs  2m29.0s/3m0s  40.00 iters/s
+
+running (2m30.0s), 024/111 VUs, 5915 complete and 0 interrupted iterations
+payments   [  83% ] 024/111 VUs  2m30.0s/3m0s  40.00 iters/s
+
+running (2m31.0s), 020/111 VUs, 5959 complete and 0 interrupted iterations
+payments   [  84% ] 020/111 VUs  2m31.0s/3m0s  40.00 iters/s
+
+running (2m32.0s), 018/111 VUs, 6001 complete and 0 interrupted iterations
+payments   [  84% ] 018/111 VUs  2m32.0s/3m0s  40.00 iters/s
+
+running (2m33.0s), 021/111 VUs, 6038 complete and 0 interrupted iterations
+payments   [  85% ] 021/111 VUs  2m33.0s/3m0s  40.00 iters/s
+
+running (2m34.0s), 020/111 VUs, 6079 complete and 0 interrupted iterations
+payments   [  86% ] 020/111 VUs  2m34.0s/3m0s  40.00 iters/s
+
+running (2m35.0s), 021/111 VUs, 6118 complete and 0 interrupted iterations
+payments   [  86% ] 021/111 VUs  2m35.0s/3m0s  40.00 iters/s
+
+running (2m36.0s), 023/111 VUs, 6156 complete and 0 interrupted iterations
+payments   [  87% ] 023/111 VUs  2m36.0s/3m0s  40.00 iters/s
+
+running (2m37.0s), 018/111 VUs, 6201 complete and 0 interrupted iterations
+payments   [  87% ] 018/111 VUs  2m37.0s/3m0s  40.00 iters/s
+
+running (2m38.0s), 022/111 VUs, 6237 complete and 0 interrupted iterations
+payments   [  88% ] 022/111 VUs  2m38.0s/3m0s  40.00 iters/s
+
+running (2m39.0s), 019/111 VUs, 6280 complete and 0 interrupted iterations
+payments   [  88% ] 019/111 VUs  2m39.0s/3m0s  40.00 iters/s
+
+running (2m40.0s), 018/111 VUs, 6321 complete and 0 interrupted iterations
+payments   [  89% ] 018/111 VUs  2m40.0s/3m0s  40.00 iters/s
+
+running (2m41.0s), 022/111 VUs, 6357 complete and 0 interrupted iterations
+payments   [  89% ] 022/111 VUs  2m41.0s/3m0s  40.00 iters/s
+
+running (2m42.0s), 019/111 VUs, 6400 complete and 0 interrupted iterations
+payments   [  90% ] 019/111 VUs  2m42.0s/3m0s  40.00 iters/s
+
+running (2m43.0s), 021/111 VUs, 6438 complete and 0 interrupted iterations
+payments   [  91% ] 021/111 VUs  2m43.0s/3m0s  40.00 iters/s
+
+running (2m44.0s), 021/111 VUs, 6478 complete and 0 interrupted iterations
+payments   [  91% ] 021/111 VUs  2m44.0s/3m0s  40.00 iters/s
+
+running (2m45.0s), 020/111 VUs, 6519 complete and 0 interrupted iterations
+payments   [  92% ] 020/111 VUs  2m45.0s/3m0s  40.00 iters/s
+
+running (2m46.0s), 022/111 VUs, 6557 complete and 0 interrupted iterations
+payments   [  92% ] 022/111 VUs  2m46.0s/3m0s  40.00 iters/s
+
+running (2m47.0s), 018/111 VUs, 6601 complete and 0 interrupted iterations
+payments   [  93% ] 018/111 VUs  2m47.0s/3m0s  40.00 iters/s
+
+running (2m48.0s), 021/111 VUs, 6638 complete and 0 interrupted iterations
+payments   [  93% ] 021/111 VUs  2m48.0s/3m0s  40.00 iters/s
+
+running (2m49.0s), 020/111 VUs, 6679 complete and 0 interrupted iterations
+payments   [  94% ] 020/111 VUs  2m49.0s/3m0s  40.00 iters/s
+
+running (2m50.0s), 019/111 VUs, 6720 complete and 0 interrupted iterations
+payments   [  94% ] 019/111 VUs  2m50.0s/3m0s  40.00 iters/s
+
+running (2m51.0s), 019/111 VUs, 6760 complete and 0 interrupted iterations
+payments   [  95% ] 019/111 VUs  2m51.0s/3m0s  40.00 iters/s
+
+running (2m52.0s), 019/111 VUs, 6800 complete and 0 interrupted iterations
+payments   [  96% ] 019/111 VUs  2m52.0s/3m0s  40.00 iters/s
+
+running (2m53.0s), 024/111 VUs, 6835 complete and 0 interrupted iterations
+payments   [  96% ] 024/111 VUs  2m53.0s/3m0s  40.00 iters/s
+
+running (2m54.0s), 022/111 VUs, 6877 complete and 0 interrupted iterations
+payments   [  97% ] 022/111 VUs  2m54.0s/3m0s  40.00 iters/s
+
+running (2m55.0s), 019/111 VUs, 6920 complete and 0 interrupted iterations
+payments   [  97% ] 019/111 VUs  2m55.0s/3m0s  40.00 iters/s
+
+running (2m56.0s), 024/111 VUs, 6955 complete and 0 interrupted iterations
+payments   [  98% ] 024/111 VUs  2m56.0s/3m0s  40.00 iters/s
+
+running (2m57.0s), 021/111 VUs, 6998 complete and 0 interrupted iterations
+payments   [  98% ] 021/111 VUs  2m57.0s/3m0s  40.00 iters/s
+
+running (2m58.0s), 024/111 VUs, 7035 complete and 0 interrupted iterations
+payments   [  99% ] 024/111 VUs  2m58.0s/3m0s  40.00 iters/s
+
+running (2m59.0s), 020/111 VUs, 7079 complete and 0 interrupted iterations
+payments   [  99% ] 020/111 VUs  2m59.0s/3m0s  40.00 iters/s
+
+running (3m00.0s), 026/111 VUs, 7113 complete and 0 interrupted iterations
+payments   [ 100% ] 026/111 VUs  3m00.0s/3m0s  40.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    checks
+    ✗ 'rate==1' rate=94.09%
+
+    dropped_iterations
+    ✗ 'count==0' count=61
+
+    failed_requests{status:0}
+    ✓ 'count>=0' count=75
+
+    failed_requests{status:500}
+    ✓ 'count>=0' count=0
+
+    failed_requests{status:502}
+    ✓ 'count>=0' count=7
+
+    failed_requests{status:503}
+    ✓ 'count>=0' count=378
+
+    failed_requests{status:504}
+    ✓ 'count>=0' count=0
+
+    http_req_duration
+    ✓ 'p(95)<1500' p(95)=783.91ms
+
+    http_req_failed
+    ✗ 'rate==0' rate=5.90%
+
+    responses_by_version{version:v1}
+    ✓ 'count>=0' count=1461
+
+    responses_by_version{version:v2}
+    ✓ 'count>=0' count=5866
+
+    responses_by_version{version:v3}
+    ✓ 'count>=0' count=0
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 15574  86.17405/s
+    checks_succeeded...: 94.09% 14654 out of 15574
+    checks_failed......: 5.90%  920 out of 15574
+
+    ✗ authorize: status is 200
+      ↳  93% — ✓ 6683 / ✗ 457
+    ✗ authorize: APPROVED
+      ↳  93% — ✓ 6683 / ✗ 457
+    ✗ retry: status is 200
+      ↳  99% — ✓ 644 / ✗ 3
+    ✗ retry: same authId (idempotent)
+      ↳  99% — ✓ 644 / ✗ 3
+
+    CUSTOM
+    failed_requests................: 460    2.545272/s
+      { status:0 }.................: 75     0.41499/s
+      { status:500 }...............: 0      0/s
+      { status:502 }...............: 7      0.038732/s
+      { status:503 }...............: 378    2.091549/s
+      { status:504 }...............: 0      0/s
+    responses_by_version...........: 7327   40.541753/s
+      { version:v1 }...............: 1461   8.084005/s
+      { version:v2 }...............: 5866   32.457749/s
+      { version:v3 }...............: 0      0/s
+
+    HTTP
+    http_req_duration..............: avg=540.13ms min=648µs  med=462.39ms max=10s    p(90)=749.33ms p(95)=783.91ms
+      { expected_response:true }...: avg=460.19ms min=1ms    med=473.65ms max=1.05s  p(90)=741.8ms  p(95)=776.09ms
+    http_req_failed................: 5.90%  460 out of 7787
+    http_reqs......................: 7787   43.087025/s
+
+    EXECUTION
+    dropped_iterations.............: 61     0.337525/s
+    iteration_duration.............: avg=589.43ms min=1.73ms med=490.62ms max=10.72s p(90)=753.65ms p(95)=785.99ms
+    iterations.....................: 7140   39.507045/s
+    vus............................: 26     min=8           max=109
+    vus_max........................: 111    min=50          max=111
+
+    NETWORK
+    data_received..................: 3.9 MB 22 kB/s
+    data_sent......................: 2.4 MB 13 kB/s
+
+
+
+
+running (3m00.7s), 000/111 VUs, 7140 complete and 0 interrupted iterations
+payments ✓ [ 100% ] 000/111 VUs  3m0s  40.00 iters/s
+time="2026-11-12T00:49:43+08:00" level=error msg="thresholds on metrics 'checks, dropped_iterations, http_req_failed' have been crossed"
