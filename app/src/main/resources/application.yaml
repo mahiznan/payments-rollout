@@ -5,6 +5,20 @@ spring:
 server:
   port: 8080
 
+# Our own settings
+app:
+  # Echoed in every response so a rollout (v1 -> v2) is visible
+  version: ${APP_VERSION:v1}
+
+payments:
+  admin:
+    # Demo-only bank outage switch, off by default
+    enabled: ${ADMIN_ENABLED:false}
+  bank:
+    # Simulated downstream latency per authorization
+    min-latency-ms: 200
+    max-latency-ms: 800
+
 management:
   endpoints:
     web:
@@ -17,3 +31,10 @@ management:
         # Enables /actuator/health/liveness and /actuator/health/readiness
         # even outside Kubernetes/OpenShift
         enabled: true
+      group:
+        liveness:
+          # App-internal state only. A bank outage must NOT restart pods.
+          include: livenessState
+        readiness:
+          # A pod that cannot reach the bank should not receive traffic.
+          include: readinessState,bankGateway
