@@ -1,6 +1,5 @@
-# PHASE 4: the NAIVE deployment, on purpose.
-# No probes, no graceful shutdown, no preStop, default rolling-update settings.
-# Later phases harden it one step at a time.
+# PHASE 6: probes + a safe rolling strategy.
+# Still NO graceful shutdown, preStop or custom grace period (those are Phase 7).
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -12,14 +11,13 @@ spec:
   selector:
     matchLabels:
       app: payment-api
-  # Set explicitly because the Kubernetes default (25%/25%) rounds to
-  # maxUnavailable 0 / maxSurge 1 with 3 replicas, which is already the SAFE
-  # setting. The naive version allows one pod to be down during a rollout.
-  # Phase 6 changes this to maxUnavailable 0.
+  # maxUnavailable 0: an old pod is only removed after a new pod is READY
+  # (passes its readiness probe). maxSurge 1: at most one extra pod at a time,
+  # which is all the memory on CRC allows. (Phase 4 had maxUnavailable: 1.)
   strategy:
     type: RollingUpdate
     rollingUpdate:
-      maxUnavailable: 1
+      maxUnavailable: 0
       maxSurge: 1
   template:
     metadata:
@@ -43,3 +41,36 @@ spec:
               memory: 96Mi
             limits:
               memory: 512Mi
+
+          # STARTUP: "has the JVM finished booting?"
+          # Runs first; liveness and readiness are paused until it succeeds once.
+          # Budget: 30 failures x 5s = up to 150s to start, so a slow boot on a busy
+          # CRC node is not mistaken for a hung app and restarted.
+          startupProbe:
+            httpGet:
+              path: /actuator/health/liveness
+              port: http
+            periodSeconds: 5
+            timeoutSeconds: 2
+            failureThreshold: 30
+
+          # LIVENESS: "is the app stuck?" On failure the container is RESTARTED.
+          # Only app-internal state (livenessState). A bank outage does not fail this.
+          livenessProbe:
+            httpGet:
+              path: /actuator/health/liveness
+              port: http
+            periodSeconds: 10
+            timeoutSeconds: 2
+            failureThreshold: 3
+
+          # READINESS: "can it take traffic right now?" On failure the pod is
+          # REMOVED from the Service endpoints (not restarted). Includes bankGateway.
+          # During a rollout a new pod gets no traffic until this passes.
+          readinessProbe:
+            httpGet:
+              path: /actuator/health/readiness
+              port: http
+            periodSeconds: 5
+            timeoutSeconds: 2
+            failureThreshold: 3
