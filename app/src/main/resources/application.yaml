@@ -1,9 +1,17 @@
 spring:
   application:
     name: payment-api
+  lifecycle:
+    # How long in-flight requests get to finish after SIGTERM before the app
+    # is stopped anyway. Must stay below terminationGracePeriodSeconds minus the
+    # preStop sleep (45 - 5 = 40s available, 20s used).
+    timeout-per-shutdown-phase: 20s
 
 server:
   port: 8080
+  # On SIGTERM: readiness flips to OUT_OF_SERVICE, the web server stops taking
+  # NEW requests, and requests already running are allowed to finish.
+  shutdown: graceful
 
 # Our own settings
 app:

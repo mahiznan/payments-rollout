@@ -1,5 +1,6 @@
-# PHASE 6: probes + a safe rolling strategy.
-# Still NO graceful shutdown, preStop or custom grace period (those are Phase 7).
+# PHASE 7: probes + safe rolling strategy + graceful shutdown.
+# Graceful shutdown itself is switched on in the app (application.yaml:
+# server.shutdown=graceful). Here: the preStop sleep and the grace period.
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -24,6 +25,10 @@ spec:
       labels:
         app: payment-api
     spec:
+      # Total shutdown budget: preStop (5s) + graceful shutdown (up to 20s) = 25s,
+      # leaving 20s of margin. If the container is still running at 45s it is
+      # SIGKILLed and in-flight requests are cut off. The default is 30s.
+      terminationGracePeriodSeconds: 45
       containers:
         - name: payment-api
           image: image-registry.openshift-image-registry.svc:5000/my-project/payment-api:latest
@@ -41,6 +46,15 @@ spec:
               memory: 96Mi
             limits:
               memory: 512Mi
+
+          # PRESTOP: runs BEFORE SIGTERM is sent to the app. The pod is being removed
+          # from the Service endpoints at the same moment, but the router needs a few
+          # seconds to notice. Sleeping keeps the app serving normally in the meantime,
+          # so no request is sent to a pod that has already stopped listening.
+          lifecycle:
+            preStop:
+              exec:
+                command: ["sh", "-c", "sleep 5"]
 
           # STARTUP: "has the JVM finished booting?"
           # Runs first; liveness and readiness are paused until it succeeds once.
